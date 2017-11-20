@@ -20,6 +20,6 @@ app.use(KoaConfig(client));
 
 ## API
 
-### KoaConfig(client)
+1. KoaConfig(client)
 
 config client 详细配置请查看文档 [config-client](http://wiki.nodecloud.cn/nodecloud/config-client)

@@ -25,11 +25,11 @@ app.use(KoaConsul(consulOptions));
 
 ## API
 
-### options.url: string
+1. options.url: string
 
 可以通过 options.url 修改默认的 koa route。
 
-### options.strategy: function(data)
+2. options.strategy: function(data)
 
 strategy 是一个回掉函数，参数是 node 的一些相关的 运行数据，
 

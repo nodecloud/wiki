@@ -14,11 +14,12 @@ import KoaConsul from 'koa-consul';
 const app = new Koa();
 
 const consulOptions = {
-			 url: '/health', 
-			 strategy: monitorData => {return true}
+	url: '/health', 
+	strategy: monitorData => {return true}
 };
 
 app.use(KoaConsul(consulOptions));
 ```
 
-可以通过 options.url 修改默认的 koa route。strategy 是一个回掉函数，参数是 node 的一些相关的 运行数据，可以在回掉函数中写一些策略，如果 return true，则服务健康；如果 return false，则服务状态是 warn。
+可以通过 options.url 修改默认的 koa route。strategy 是一个回掉函数，参数是 node 的一些相关的 运行数据，
+可以在回掉函数中写一些策略，如果 return true，则服务健康；如果 return false，则服务状态是 warn。

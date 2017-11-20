@@ -18,7 +18,7 @@ app.use(KoaProm({url: '/metrics', register: register}));
 ## API
 
 1. options.url
+自定义路由地址，默认为 /metrics。
 
 2. options.register
-
 详细配置请查看 [prom-client](https://github.com/siimon/prom-client)。
